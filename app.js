@@ -3,6 +3,8 @@ const moment = require("moment-timezone");
 
 const app = express();
 
+app.set("json spaces", 2);
+
 app.get("/api", (req, res) => {
   const { slack_name, track } = req.query;
 
